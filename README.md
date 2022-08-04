@@ -2,8 +2,8 @@
 This Repository aims to contain the Network based Dtasets used to train and test AtlasSonic ML approaches and models. Initially, it will consist of SOA Datasets that will be dynamically updated. Each Dataset will be presented with two subsets, the original Data (mainly pcaps files and original CSVs) and Datas that has been processed using AtlaSonic teams methods. 
 The Startup Datasets are: <br /> 
 
-                        - CIC-IDS-2017 <br />
-                        - CSE-CIC-2018 <br />
+                        - CIC-IDS-2017 
+                        - CSE-CIC-2018 
                         - UNSW-NB-15 <br />
                         - ToN-IoT <br />
                         - BoT-IoT <br />
