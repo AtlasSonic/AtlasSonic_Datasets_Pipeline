@@ -20,7 +20,7 @@ The Startup Datasets are: <br />
  
  The criteria used to choose these Datasets are: Reproductiblity, Ataacks diversity and Ground Truth Data availability. <br />
  
- To process these Datasets, we carried out the following process: <br />
+ To process these Datasets, we carried out the following steps: <br />
  
                         1. Fixing the original Pcaps with PcapFix tool to make sure that all packet files are not damaged 
                         2. Murging Pcap files (depending on the Dataset structure) 
