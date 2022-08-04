@@ -1,6 +1,7 @@
 # AtlasSonic_Datasets_Pipeline <br />
 This Repository aims to contain the Network based Dtasets used to train and test AtlasSonic ML approaches and models. Initially, it will consist of SOA Datasets that will be dynamically updated. Each Dataset will be presented with two subsets, the original Data (mainly pcaps files and original CSVs) and Datas that has been processed using AtlaSonic teams methods. 
 The Startup Datasets are: <br /> 
+
                         - CIC-IDS-2017 <br />
                         - CSE-CIC-2018 <br />
                         - UNSW-NB-15 <br />
@@ -20,10 +21,11 @@ The Startup Datasets are: <br />
  The criteria used to choose these Datasets are: Reproductiblity, Ataacks diversity and Ground Truth Data availability. <br />
  
  To process these Datasets, we carried out the following process: <br />
+ 
                         1. Fixing the original Pcaps with PcapFix tool to make sure that all packet files are not damaged <br />
                         2. Murging Pcap files (depending on the Dataset structure) <br />
                         3. Extracting Netwok features from the murged pcaps using NFStream tool <br />
-                        4.  Labelling the extracted Data using Ground Truth information published by the Datasets Owners <br />
+                        4. Labelling the extracted Data using Ground Truth information published by the Datasets Owners <br />
                         5. Analyzing the murged pcaps with Suricata using updated detection rules <br />
                         6. Converting Suricata JSON files into CSV files in order to identifiy Alerted Flows <br />
                         7. Cross the labeling results (Suricata Vs Ground Truth Annotation). To do that, we used the 5-Tuples and Timestap to                                  compare the flows classification <br />
@@ -36,6 +38,7 @@ On an other hand, the idea behind reproducting the choosen Dataset is to extract
                         - Active_Timeout: the max duration of an active flow <br />
                         
 Hence, each Active and Idle combination will provide a Sub-Dataset. So for each original Dataset we weill have 8 subdatasets named as follows: <br />
+
                         - 30120, 30300, 3060 and 303600 <br />
                         - 60120, 60300, 6060 and 603600 <br />
                     
