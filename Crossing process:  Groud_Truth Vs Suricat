@@ -1,0 +1,8 @@
+- The Crossing process consists of validating the Ground truth labels using Suricata rules. To do so, we folloed these steps:
+    1. Analaysing each Datasets pcap files with Suricata
+    2. Converting  Suricata Json file to CSV format for each Dataset using evejson2csv.py 
+    3. Filtering the resulting csv file to extract statistics on Suricata analysis (results distribution: Alerted/Not Alerted)
+    4. Comparing the results with the Ground Truth Statistics (NFstream annotatio)
+    5. For each 5-Tuple, within the GT communicated time range, we verify if it is labaled as Alerted with Suricata and compare the resulted flows with GT labels
+    6. We Create a new Datasets with the the flows that have been 
+    
